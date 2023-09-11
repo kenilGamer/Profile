@@ -1,0 +1,271 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: "montserrat";
+    box-sizing: border-box;
+}
+:root{
+    --manicolor:#15d675;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+#loader{
+    overflow: hidden;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://img.freepik.com/free-vector/colored-hacker-code-realistic-composition-with-person-creates-codes-hacking-stealing-information-vector-illustration_1284-18005.jpg?w=740&t=st=1694413804~exp=1694414404~hmac=8322932414499052ceea0037a01a4bdc8a73b6e89d5c3f2798574ca8caa15381);
+    background-size: cover;
+    background-position: center;
+    background-clip: content-box;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    animation: anim2 1s cubic-bezier(0.19, 1, 0.22, 1) 7s both;
+    background-color: aliceblue;
+    -webkit-animation: anim2 1s cubic-bezier(0.19, 1, 0.22, 1) 7s both;
+}
+#wrapperload{
+    overflow: hidden;
+    width: 500px;
+    height: 100px;
+}
+#wrapperload .elem{
+    display: flex;
+   /* background-color: aquamarine;*/
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+#wrapperload .elem:nth-child(1){
+    color:var(--manicolor);
+    animation: anim 1s cubic-bezier(0.19, 1, 0.22, 1) 1.5s both;
+    -webkit-animation: anim 1s cubic-bezier(0.19, 1, 0.22, 1) 1.5s both;
+}
+#wrapperload .elem:nth-child(2){
+    color:var(--manicolor);
+    animation: anim 1s cubic-bezier(0.19, 1, 0.22, 1) 2.5s both;
+    -webkit-animation: anim 1s cubic-bezier(0.19, 1, 0.22, 1) 2.5s both;
+}
+#wrapperload .elem:nth-child(3){
+    color:var(--manicolor);
+    animation: anim 1s cubic-bezier(0.19, 1, 0.22, 1) 4s both;
+    -webkit-animation: anim 1s cubic-bezier(0.19, 1, 0.22, 1) 4s both;
+}
+
+
+
+
+
+#wrapperload .elem h4{
+    font-size: 40px;
+   /* background: linear-gradient(to left ,rgb(255, 247, 0),rgb(115, 255, 0),rgb(0, 255, 115),rgb(9, 227, 239),rgb(0, 128, 255));
+    */
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR717q87PFbefJRviDhqz3nwdIDZzRoh3SEAw&usqp=CAU);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: 50px;
+    color: transparent;
+}
+@keyframes change {
+    0%{
+        background-image: url();
+    }
+    20%{
+        background-image: url(https://img.freepik.com/free-photo/matrix-hacker-background_23-2150082005.jpg?w=740&t=st=1694414234~exp=1694414834~hmac=b8177ce22df55a5038f7e0d7479e27565bf7d3833f626f77666e55f719fa12a0);
+    }
+    40%{
+        background-image: url();
+    }
+    60%{
+        background-image: url();
+    }
+    80%{
+        background-image: url();
+    }
+    100%{
+        background-image: url();
+    }
+}
+@keyframes anim{
+    to{
+        margin-top: -100px;
+    }
+}
+
+@keyframes anim2{
+    to{
+        transform: translatey(-100%);
+        -webkit-transform: translatey(-100%);
+        -moz-transform: translatey(-100%);
+        -ms-transform: translatey(-100%);
+        -o-transform: translatey(-100%);
+}
+}
+
+*/
+#bg{
+
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(229, 228, 227);
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+    -webkit-transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+    -moz-transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+    -ms-transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+    -o-transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    height: 80px;
+    /*background-color: darkgray;*/
+    margin: 0 auto;
+}
+nav #links{
+    display: flex;
+    align-items: center;
+}
+nav #links a{
+    margin-left: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: black;
+    letter-spacing: 4px;
+}
+nav #links i{
+    margin-left: 30px;
+}
+nav #links a:nth-child(2){
+    color: rgb(255, 60, 0);
+}
+#sections{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    
+}
+#left{
+    width: 50%;
+    height: 150%;
+    padding: 100px;
+    overflow: hidden;
+}
+#left #smline{
+    margin-top: 120px;
+    width: 100px;
+    height: 3px;
+    /*background: linear-gradient(to left,red,rgb(17, 255, 199),rgb(0, 89, 255));*/
+    background-color: black;
+}
+#left h4{
+    font-size: 45px;
+    margin-top: 20px;
+}
+#left h1{
+    font-size: 60px;
+    margin-top: 20px;
+    background: linear-gradient(to left ,rgb(255, 247, 0),rgb(115, 255, 0),rgb(0, 255, 115),rgb(9, 227, 239),rgb(0, 128, 255));
+    
+   /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR717q87PFbefJRviDhqz3nwdIDZzRoh3SEAw&usqp=CAU);*/
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: 50px;
+    color: transparent;
+}
+#left>h5{
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 11px;
+    margin-top: 15px;
+    font-weight: 900;
+    color: rgb(128, 128, 128);
+}
+#left>h5 span{
+    color: rgb(161, 43, 27);
+}
+#playbtn img{
+    width: 70px;
+}
+#playbtn{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+#playbtn h5{
+    margin-left: 20px;
+    font-size: 12px;
+    margin-top: 5px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+#contact{
+    margin-top: 100px;
+}
+#contact h3{
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 15px;
+    font-weight: 800;
+}
+#contact h6{
+    margin: 8px;
+    font-size: 15px;
+}
+#contact h6 span{
+    font-size: 18;
+    color: rgb(132, 235, 201);
+}
+#right{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+#right img{
+    
+    margin-top: 50px;
+    width: 90%;
+    height: 90%;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+@media (max-width:1024px ) {
+    #sections{
+        flex-direction: column;
+    }
+    #left{
+        width: 100%;
+        object-fit: cover;
+
+    }
+    #contact{
+        margin-top: 100px;
+    }
+    #right img{
+        margin-left: 50%;
+        margin-top: 60px;
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        -o-border-radius: 100%;
+    }
+}

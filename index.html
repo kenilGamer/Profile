@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <div id="loader">
+        <div id="wrapperload">
+            <div class="elem">
+                <h4>KENIL GAMER</h4>
+            </div>
+            <div class="elem">
+                <h3>UI/UX Designer</h3>
+            </div>
+            <div class="elem">
+                <h3>loves to help brands.</h3>
+            </div>
+            <div class="elem">
+                <h4>KENIL GAMER</h4>
+            </div>
+        </div>
+    </div>
+
+    <div id="bg">
+        <nav>
+        <img class="navitem" src="logo.png" width="50px" height="50px" alt="">
+        <div class="navitem" id="links">
+            <a class="navitem" href="#">home</a>
+            <a class="navitem" href="#">projects</a>
+            <i class="navitem ri-search-line"></i>
+            <i class="navitem ri-menu-line"></i>
+        </div>
+        </nav>
+        <div id="sections">
+            <div id="left">
+                <div id="smline">
+                </div>
+                <h4 class="leftitem">hello, I am 👋</h4>
+                <h1 class="leftitem">KENIL GAME,</h1>
+                <h5 class="leftitem">a designer from <span class="leftitem"> india.</span></h5>
+                <div class="leftitem" id="playbtn">
+                    <img class="leftitem" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrBs5XwYGIvyrxs_E5NZL_d2Jz2fSLdYejSw&usqp=CAU" alt="">
+                    <h5 class="leftitem">see my work profile</h5>
+                </div>
+                <div class="leftitem" id="contact">
+                    <h3>Contact me</h3>
+                    <h6>Email : <a href=""><span>kenilgamer232@email.com</span></a></h6>
+                    <h6>discor id: <a href=""><span>kenilgamer#0</span></a></h6>
+                </div>
+            </div>
+            <div id="right">
+                <img src="https://cdn.discordapp.com/attachments/1081506489505677382/1147114704561504306/IMG_20230524_195750_562.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+    <script>
+        var menu = document.querySelector('#menu');
+        var bg = document.querySelector('#bg');
+
+        menu.addEventListener('click', function(){
+            bg.style.transform = 'scale(.8)';
+            bg.style.borderRadius = '10px';
+            bg.style.boxShadow = '0 150px 45px -100px rgba(0,0,0,0.2)';
+        })
+    </script>
+</body>
+</html>
